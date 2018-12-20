@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Rewe Shop Chrome Extension",
+    "description": "This extension helps to improve your experience with Rewe online Shop",
+    "version": "1.0",
+    "homepage_url": "https://github.com/apphancer/rewe-shop-chrome-extension",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "Rewe Shop Extension"
+    },
+    "content_scripts": [{
+        "matches": ["*://shop.rewe.de/checkout/basket/*"],
+        "all_frames": true,
+        "js":      ["scripts/content.js"]
+    }],
+    "permissions": [
+        "activeTab"
+    ],
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/; object-src 'self'"
+}
