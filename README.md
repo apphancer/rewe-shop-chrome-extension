@@ -1,4 +1,4 @@
-# Rewe Shop Chrome Extension
+# Rewe Shop (basket emptier) Chrome Extension
 This Chrome extension adds a button to the browser which allows emptying a shopping basket entirely on Rewe's Online Shop website.
 
 rewe-shop-chrome-extension is a little fun project that I've developed to add missing functionality to Rewe's online shop.
